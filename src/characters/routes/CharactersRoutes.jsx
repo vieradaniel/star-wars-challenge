@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import { Navbar } from '../../ui/components/Navbar'
 import { CharacterPage,CharactersPage } from '../pages'
 
-export const StarWarsRoutes = () => {
+export const CharactersRoutes = () => {
   return (
     <>
         <Navbar />
@@ -12,7 +12,8 @@ export const StarWarsRoutes = () => {
             <Routes>
                  
                 <Route path='/character' element={ <CharacterPage/> }/>
-                <Route path="/characters" element={ <CharactersPage /> } />  
+                <Route path="/" element={ <CharactersPage /> } /> 
+                  
                     
             </Routes>
         </div>

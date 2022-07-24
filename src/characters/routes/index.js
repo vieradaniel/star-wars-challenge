@@ -1,1 +1,1 @@
-export * from './StarWarsRoutes';
+export * from './CharactersRoutes';

@@ -1,9 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 
 import { LoginPage } from "../auth/pages/LoginPage";
-import { StarWarsRoutes } from "../characters/routes";
-
-
+import { CharactersRoutes } from "../characters/routes";
 
 
 export const AppRouter = () => {
@@ -14,7 +12,7 @@ export const AppRouter = () => {
             
             <Route path ='login' element = { <LoginPage/> } />
 
-            <Route path ='/*' element = { <StarWarsRoutes /> } />
+            <Route path ='/*' element = { <CharactersRoutes /> } />
               
         </Routes>
 
