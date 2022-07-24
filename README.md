@@ -1,6 +1,6 @@
 # Daniel Viera  / Star Wars React Challenge
 
-La consigna es crear un proyecto de cero con 'npx create-react-app --template typescript',listar los personajes de Star Wars desde esta api 'https://swpi.dev/api/people/', al darle click al personaje debe mostrar el detalle del personaje.
+La consigna es crear un proyecto de cero con 'npx create-react-app --template typescript',listar los personajes de Star Wars desde esta api https://swapi.dev/api/people , al darle click al personaje debe mostrar el detalle del personaje.
 
 ## Tecnologías
 
@@ -8,7 +8,7 @@ La consigna es crear un proyecto de cero con 'npx create-react-app --template ty
 
 ### `React hooks`
 
-### `Para la llamada a la AI usar axios`
+### `Para la llamada a la API usar axios`
 
 ### `Styles como más te guste`
 
