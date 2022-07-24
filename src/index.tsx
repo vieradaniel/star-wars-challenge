@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from "react-router-dom";
+
 import { StarWarsApp } from './StarWarsApp';
+import './styles.css';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <StarWarsApp />
+    <BrowserRouter>
+      <StarWarsApp />
+    </BrowserRouter>    
   </React.StrictMode>
 );
 
