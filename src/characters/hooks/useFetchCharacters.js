@@ -6,6 +6,7 @@ export const useFetchCharacters = (url) => {
   const [characters, setCharacters] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  
 
   useEffect(() => {
     setLoading(true);
@@ -14,6 +15,7 @@ export const useFetchCharacters = (url) => {
       .then((response) => {
         setData(response.data);
         setCharacters(response.data.results);
+        
       })
       .catch((err) => {
         setError(err);
