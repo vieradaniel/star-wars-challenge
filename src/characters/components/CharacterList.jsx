@@ -9,10 +9,10 @@ export const CharacterList = ({characters,loading,error}) => {
 
   return (
     <>
-    <h1>Star Wars Characters</h1>
+    <h1 className='text-center p-2'>Star Wars Characters</h1>
     
     <hr />
-      <div className ='row rows-cols-1 row-cols-md-1 g-1'>
+      <div className="row row-cols-1 row-cols-md-2 g-4">
         {
           characters?.map((character)=>{
             return <CharacterCard 
