@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 export const CharacterCard = ({ name ,birth_year}) => {
 
@@ -9,9 +10,9 @@ export const CharacterCard = ({ name ,birth_year}) => {
         <p className="card-text">
           birth year : {birth_year}
         </p>
-        <a href="#" className="btn btn-primary">
-          view detailed card
-        </a>
+        <Link to ={`/character/${name}`}>
+          More
+        </Link>
       </div>
     </div>
    

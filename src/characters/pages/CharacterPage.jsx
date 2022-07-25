@@ -1,7 +1,36 @@
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom"
+import { CharacterDetail } from "../components/CharacterDetail";
 
 
-export const CharacterPage = () => {
+export const CharacterPage = ({characters,loading,error}) => {
+  
+  const [currentCharacter, setCurrentCharacter] = useState('')
+  const {name} = useParams();
+
+  useEffect(() => {
+    if(characters){
+      setCurrentCharacter(characters.find(character => character.name === name));
+    } 
+  }, [characters])
+  
+  
+  
+
+  
+
+  
+
   return (
-    <h1>CharacterPage</h1>
+    <>
+    {
+      currentCharacter
+      ?
+      <CharacterDetail currentCharacter={currentCharacter}/>     
+      :
+      'loading or not found'
+      
+    }
+    </>
   )
 }

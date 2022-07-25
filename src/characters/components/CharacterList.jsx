@@ -2,10 +2,10 @@ import React from 'react'
 import { useFetchCharacters } from '../hooks/useFetchCharacters'
 import { CharacterCard } from './CharacterCard';
 
-export const CharacterList = () => {
+export const CharacterList = ({characters,loading,error}) => {
 
-  const {characters,loading,error} = useFetchCharacters('https://swapi.dev/api/people/');
   
+ 
 
   return (
     <>

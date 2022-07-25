@@ -1,7 +1,10 @@
 import { CharacterList } from "../components/"
 
-export const CharactersPage = () => {
+export const CharactersPage = ({characters,loading,error}) => {
   return (
-    <CharacterList />
+    <CharacterList 
+          characters={characters} 
+          loading={loading}
+          error={error}/>
   )
 }
