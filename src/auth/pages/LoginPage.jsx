@@ -1,4 +1,6 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
+
+
 
 export const LoginPage = () => {
   const navigate = useNavigate();
@@ -15,7 +17,7 @@ export const LoginPage = () => {
       <h1>Login</h1>
       <hr />
       <button 
-        className='btn btn-primary'
+        className='btn btn-dark'
         onClick={handleLogin}
         >
         Login

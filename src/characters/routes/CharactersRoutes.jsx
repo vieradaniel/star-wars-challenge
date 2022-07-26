@@ -6,6 +6,7 @@ import { CharacterPage,CharactersPage } from '../pages'
 
 export const CharactersRoutes = () => {
   const {characters,loading,error} = useFetchCharacters('https://swapi.dev/api/people/');
+  
   return (
     <>
         <Navbar />

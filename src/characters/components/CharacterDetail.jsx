@@ -14,7 +14,7 @@ export const CharacterDetail = ({currentCharacter}) => {
     <div className="row mt-5">
       <div className="col-4">
         <img 
-          src={ `https://culturacolectiva-cultura-colectiva-prod.cdn.arcpublishing.com/resizer/v6BqV31JjLYQCySD2t9hxMe71jw=/1024x768/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/culturacolectiva/E7NFI63N55ET7CWCKVRAFURL2M.jpg` } 
+          src={ `https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png` } 
           alt={ currentCharacter.name }
           className="img-thumbnail animate__animated animate__fadeInLeft"
         />
@@ -32,7 +32,7 @@ export const CharacterDetail = ({currentCharacter}) => {
         <p>{currentCharacter.gender}</p>
 
         <button 
-          className="btn btn-outline-primary"
+          className="btn btn-outline-dark"
           onClick={ handleNavigateBack }
         >
           Regresar

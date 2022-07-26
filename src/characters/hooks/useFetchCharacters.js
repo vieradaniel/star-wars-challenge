@@ -4,12 +4,12 @@ import axios from "axios";
 export const useFetchCharacters = (url) => {
   const [data, setData] = useState(null);
   const [characters, setCharacters] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   
 
   useEffect(() => {
-    setLoading(true);
+    //setLoading(true);
     axios
       .get(url)
       .then((response) => {

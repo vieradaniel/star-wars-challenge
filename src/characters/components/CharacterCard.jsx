@@ -6,16 +6,14 @@ export const CharacterCard = ({ name, birth_year }) => {
       <Link to={`/character/${name}`}>
         <div className="card">
           <img
-            src="https://c.tenor.com/smURMKllRl8AAAAd/star-wars.gif"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png"
             className="card-img-top"
             alt="..."
           />
           <div className="card-body">
             <h5 className="card-title">{name}</h5>
             <p className="card-text">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+              Click on this card to get the detailed information of this character
             </p>
           </div>
         </div>
